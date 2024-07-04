@@ -4,7 +4,6 @@ import * as dotenv from 'dotenv';
 
 async function bootstrap() {
   dotenv.config();
-
   const app = await NestFactory.create(TwilioModule);
   await app.listen(3000);
 }
