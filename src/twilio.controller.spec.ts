@@ -20,7 +20,7 @@ describe('TwilioController', () => {
     it('should return a TwiML response', async () => {
       const twimlResponse = `
         <Response>
-          <Say>Hello, I love you. Have a nice day.</Say>
+          <Say>I just want to say I love you, and I mean it from the bottom of my heart.</Say>
         </Response>
       `;
 
