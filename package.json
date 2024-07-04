@@ -1,6 +1,6 @@
 {
   "name": "allo-francis",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "",
   "author": "",
   "private": true,
@@ -12,6 +12,7 @@
     "start:dev": "nest start --watch",
     "start:debug": "nest start --debug --watch",
     "start:prod": "node dist/main",
+    "pm2:start": "pm2 restart main",
     "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
     "test": "pnpm test:cov && pnpm test:e2e && pnpm format && pnpm start",
     "test:watch": "jest --watch",
