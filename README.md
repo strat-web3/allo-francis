@@ -35,8 +35,10 @@ pnpm test:cov
 ## Deployment to Jelastic
 
 ```
-https://avventura.jcloud-ver-jpe.ik-server.com/api
+https://allo-francis.jcloud-ver-jpe.ik-server.com/webhook/twilio/incoming-call
 ```
+
+In [Twilio console](https://console.twilio.com/us1/develop/phone-numbers/manage/incoming), click on the phone number and add this URL as a value of `webhook`.
 
 ## Versions
 

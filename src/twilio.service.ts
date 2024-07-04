@@ -5,7 +5,7 @@ export class TwilioService {
   handleIncomingCall(): string {
     const twiml = `
       <Response>
-        <Say>Hello! This is Francis. I promise I will help you someday.</Say>
+        <Say>Hello, I love you. Have a nice day.</Say>
       </Response>
     `;
 

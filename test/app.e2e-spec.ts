@@ -23,11 +23,10 @@ describe('TwilioController (e2e)', () => {
   });
 
   describe('/webhook/twilio/incoming-call (POST)', () => {
-    // Ensure correct route definition
     it('should return a TwiML response', async () => {
       const twimlResponse: string = `
         <Response>
-          <Say>Hello! This is Francis. I promise I will help you someday.</Say>
+          <Say>Hello, I love you. Have a nice day.</Say>
         </Response>
       `;
       jest
@@ -35,8 +34,8 @@ describe('TwilioController (e2e)', () => {
         .mockResolvedValue(twimlResponse);
 
       const response = await request(app.getHttpServer())
-        .post('/webhook/twilio/incoming-call') // Use the correct endpoint
-        .expect(201); // Update expectation to expect 201 Created
+        .post('/webhook/twilio/incoming-call')
+        .expect(201);
 
       expect(response.text).toEqual(twimlResponse);
     });
