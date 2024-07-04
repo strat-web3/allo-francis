@@ -8,11 +8,13 @@ Testing Twilio integration in Nest.js API.
 pnpm i
 ```
 
-## Run
+Create a `.env` on the model of `.env.example`:
 
-```bash
-pnpm start
 ```
+cp .env.template .env
+```
+
+Then Add your own keys.
 
 ## Test
 
@@ -30,6 +32,12 @@ With coverage:
 
 ```bash
 pnpm test:cov
+```
+
+## Run
+
+```bash
+pnpm start
 ```
 
 ## Deployment to Jelastic
