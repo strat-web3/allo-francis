@@ -8,11 +8,13 @@ Testing Twilio integration in Nest.js API.
 pnpm i
 ```
 
-## Run
+Create a `.env` on the model of `.env.example`:
 
-```bash
-pnpm start
 ```
+cp .env.template .env
+```
+
+Then Add your own keys.
 
 ## Test
 
@@ -32,7 +34,17 @@ With coverage:
 pnpm test:cov
 ```
 
+## Run
+
+```bash
+pnpm start
+```
+
 ## Deployment to Jelastic
+
+```
+git pull origin main && npm i && npm run build && pm2 restart main
+```
 
 ### Webhook URL
 
@@ -47,6 +59,11 @@ curl -X POST https://allo-francis.jcloud-ver-jpe.ik-server.com/webhook/twilio/in
 ```
 
 In [Twilio console](https://console.twilio.com/us1/develop/phone-numbers/manage/incoming), click on the phone number and add this URL as a value of `webhook`.
+
+## Call
+
+- Get your phone number whitelisted
+- Call this number: **+12202355883**
 
 ## Versions
 
