@@ -27,4 +27,4 @@ jobs:
       - name: Build and deploy
         run: |
           npm run build
-          npm run pm2:start  # Command to start your PM2-managed application
+          npm run pm2:start
